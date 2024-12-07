@@ -6,11 +6,17 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.headerContainer}>
-        <Text style={styles.headerText}>Contact Details</Text>
+        <Text style={styles.headerText}>BIO Details</Text>
       </View>
       <View style={styles.inputField}>
         <Text style={styles.nameInput} >Name:</Text>
         <TextInput style={styles.textContainer} placeholder= "Emmanuel Oyenuga"/>
+        <Text style={styles.nameInput} >Email:</Text>
+        <TextInput style={styles.textContainer} placeholder= "Emmaoyenuga@gmial.com"/>
+        <Text style={styles.nameInput} >About:</Text>
+        <TextInput 
+          multiline={true}
+          numberOfLines={10} style={styles.textArea} placeholder= "I am currently advancing my expertise in mobile application development through a postgraduate diploma program at the University of Winnipeg PACE. My academic journey began with a Bachelor's in Science, majoring in Human Anatomy from Olabisi Onabanjo University, which has equipped me with a strong analytical foundation and a unique perspective on problem-solving. With several years of experience as a graphics and UI/UX designer, I excel in creating intuitive and visually appealing designs that enhance user experiences. My proficiency in forex market analysis further sharpens my analytical skills, enabling me to dissect charts with precision and develop strategic insights.."/>
       </View>
     </SafeAreaView>
   );
@@ -19,17 +25,49 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    backgroundColor: '#D9D9D9',
   },
   headerContainer: {
     justifyContent:"center",
   },
+
   headerText: {
+    marginTop: 15,
     textAlign: "center",
     paddingTop: 20,
     fontSize: 40,
     fontWeight: "bold",
+    color: "#262626",
+  },
+  inputField: {
+    marginTop: 20,
+  },
+  nameInput: {
+    marginBottom: 10,
+    marginLeft: 40,
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  textContainer: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: 20,
+    elevation: 15,
+    flexDirection: "row",
+    borderRadius: 20,
+    marginHorizontal: 30,
+    elevation: 15,
+    marginVertical: 15,
+    alignItems: "center",
+    height: 53,
+    paddingLeft: 10,
+  },
+  textArea: {
+    backgroundColor: "#FFFFFF",
+    fontSize: 14,
+    borderRadius: 20,
+    marginHorizontal: 30,
+    paddingLeft: 10,
+    alignItems: "center",
+    height: 240,
   }
 });
