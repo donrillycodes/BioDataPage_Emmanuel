@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, TextInput, Button } from 'react-native';
 
 export default function App() {
   return (
@@ -22,7 +22,9 @@ export default function App() {
             multiline={true}
             numberOfLines={2}
             style={styles.textContainer} placeholder= "Movies, footbal(soccer), chess" />
-            
+        <View style={styles.button}>
+          <Button title='Submit'/>
+        </View>
       </View>
     </View>
   );
@@ -75,5 +77,11 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     alignItems: "center",
     height: 240,
+    marginBottom: 10
+  },
+  button: {
+    elevation: 10,
+    marginHorizontal: 30,
+    paddingTop: 10
   }
 });
