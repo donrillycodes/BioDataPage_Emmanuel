@@ -57,9 +57,9 @@ const styles = StyleSheet.create({
   textContainer: {
     backgroundColor: "#FFFFFF",
     borderRadius: 20,
-    elevation: 15,
+    elevation: 20,
     flexDirection: "row",
-    borderRadius: 20,
+    borderRadius: 15,
     marginHorizontal: 30,
     elevation: 15,
     marginVertical: 15,
