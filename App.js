@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.headerContainer}>
         <Text style={styles.headerText}>BIO Details</Text>
@@ -24,7 +24,7 @@ export default function App() {
             style={styles.textContainer} placeholder= "Movies, footbal(soccer), chess" />
             
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
