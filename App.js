@@ -16,7 +16,7 @@ export default function App() {
         <Text style={styles.nameInput} >About:</Text>
         <TextInput 
           multiline={true}
-          numberOfLines={10} style={styles.textArea} placeholder= "I am currently advancing my expertise in mobile application development through a postgraduate diploma program at the University of Winnipeg PACE. My academic journey began with a Bachelor's in Science, majoring in Human Anatomy from Olabisi Onabanjo University, which has equipped me with a strong analytical foundation and a unique perspective on problem-solving. With several years of experience as a graphics and UI/UX designer, I excel in creating intuitive and visually appealing designs that enhance user experiences. My proficiency in forex market analysis further sharpens my analytical skills, enabling me to dissect charts with precision and develop strategic insights.."/>
+          numberOfLines={10} style={styles.textArea} placeholder= "I am currently advancing my expertise in mobile application development through a postgraduate diploma program at the University of Winnipeg PACE. My academic journey began with a Bachelor's in Science, majoring in Human Anatomy from Olabisi Onabanjo University, which has equipped me with a strong analytical foundation and a unique perspective on problem-solving. With several years of experience as a graphics and UI/UX designer, I excel in creating intuitive and visually appealing designs that enhance user experiences. My proficiency in forex market analysis further sharpens my analytical skills..."/>
         <Text style={styles.nameInput} >Hobbies:</Text>
         <TextInput 
             multiline={true}
@@ -31,7 +31,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D9D9D9',
+    backgroundColor: '#eff1ed',
   },
   headerContainer: {
     justifyContent:"center",
