@@ -21,7 +21,7 @@ export default function App() {
         <TextInput 
             multiline={true}
             numberOfLines={2}
-            style={styles.textContainer} placeholder= "Movies", "footbal(soccer)", "chess" />
+            style={styles.textContainer} placeholder= "Movies, footbal(soccer), chess" />
             
       </View>
     </SafeAreaView>
